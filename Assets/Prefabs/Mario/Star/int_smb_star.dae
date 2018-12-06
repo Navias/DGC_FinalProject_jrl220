@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <created>2016-03-21T11:12:19Z</created>
+    <modified>2016-03-21T11:12:19Z</modified>
+  </asset>
+  <library_images>
+    <image id="object_dw01_SuperStar_dif_id" name="object_dw01_SuperStar_dif">
+      <init_from>./object_dw01_SuperStar_dif.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="SuperStarMat00_mat_id" name="SuperStarMat00_mat">
+      <instance_effect url="#eff_SuperStarMat00_id" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="eff_SuperStarMat00_id" name="eff_SuperStarMat00">
+      <profile_COMMON>
+        <newparam sid="img_surface">
+          <surface type="2D">
+            <init_from>object_dw01_SuperStar_dif_id</init_from>
+            <format>PNG</format>
+          </surface>
+        </newparam>
+        <newparam sid="img_sampler">
+          <sampler2D>
+            <source>img_surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>LINEAR</magfilter>
+            <mipfilter>LINEAR</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="img_technique">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="img_sampler" texcoord="uv" />
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="mesh_0__meshIndex0_id" name="mesh_0__meshIndex0">
+      <mesh>
+        <source id="mesh_0__meshIndex0_position_id" name="mesh_0__meshIndex0_position">
+          <float_array id="mesh_0__meshIndex0_position_array_id" count="156">0 25.91064 0 -4.444104 17.90378 0 -4.355337 17.50394 1.834722 -4.355337 17.50394 -1.834722 -3.237213 16.24264 3.839703 -3.237213 16.24264 -3.839703 0 17.8194 3.770067 0 17.8194 -3.770067 3.237213 16.24264 3.839703 3.237213 16.24264 -3.839703 4.355337 17.50394 1.834722 4.355337 17.50394 -1.834722 4.444104 17.90378 0 -13.43244 16.15146 0 0 11.78701 -4.839093 13.43244 16.15146 0 4.779788 13.34004 3.984372 -4.779788 13.34004 3.984372 -4.779788 13.34004 -3.984372 -5.237904 10.0851 3.842307 -5.237904 10.0851 -3.842307 -7.047096 9.575601 1.845016 -7.047096 9.575601 -1.845016 -7.46214 9.450063 0 5.237904 10.0851 3.842307 4.779788 13.34004 -3.984372 -8.301699 0.3606834 0 -2.95407 7.72107 4.040232 7.047096 9.575601 1.845016 8.301699 0.3606834 0 2.95407 7.72107 4.040232 5.237904 10.0851 -3.842307 -2.95407 7.72107 -4.040232 2.95407 7.72107 -4.040232 0 6.279525 -3.768723 0 6.279525 3.768723 7.46214 9.450063 0 0 4.575563 -1.939394 7.047096 9.575601 -1.845016 0 4.575563 1.939394 0 4.080867 0 0 11.78701 4.839093 0 17.8194 3.770067 -3.237213 16.24264 3.839703 3.237213 16.24264 3.839703 -4.779788 13.34004 3.984372 4.779788 13.34004 3.984372 -5.237904 10.0851 3.842307 5.237904 10.0851 3.842307 -2.95407 7.72107 4.040232 2.95407 7.72107 4.040232 0 6.279525 3.768723</float_array>
+          <technique_common>
+            <accessor source="#mesh_0__meshIndex0_position_array_id" count="52" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_0__meshIndex0_normal_id" name="mesh_0__meshIndex0_normal">
+          <float_array id="mesh_0__meshIndex0_normal_array_id" count="156">0 1 0 -0.5905512 0.8110236 0 -0.519685 0.7322835 0.4409449 -0.519685 0.7322835 -0.4409449 -0.2755905 0.3779528 0.8818898 -0.2755905 0.3779528 -0.8818898 0 0.2992126 0.9527559 0 0.2992126 -0.9527559 0.2755905 0.3779528 0.8818898 0.2755905 0.3779528 -0.8818898 0.519685 0.7322835 0.4409449 0.519685 0.7322835 -0.4409449 0.5905512 0.8110236 0 -0.9448819 0.3307087 0 0 0 -1 0.9448819 0.3307087 0 0.2755905 0.08661418 0.9606299 -0.2755905 0.08661418 0.9606299 -0.2755905 0.08661418 -0.9606299 -0.4251969 -0.1338583 0.8976378 -0.4251969 -0.1338583 -0.8976378 -0.8346457 -0.2755905 0.480315 -0.8346457 -0.2755905 -0.480315 -0.9527559 -0.3149606 0 0.4251969 -0.1338583 0.8976378 0.2755905 0.08661418 -0.9606299 -0.5748032 -0.8188976 0 -0.1574803 -0.2362205 0.9606299 0.8346457 -0.2755905 0.480315 0.5748032 -0.8188976 0 0.1574803 -0.2362205 0.9606299 0.4251969 -0.1338583 -0.8976378 -0.1574803 -0.2362205 -0.9606299 0.1574803 -0.2362205 -0.9606299 0 -0.4566929 -0.8897638 0 -0.4566929 0.8897638 0.9527559 -0.3149606 0 0 -0.8740157 -0.488189 0.8346457 -0.2755905 -0.480315 0 -0.8740157 0.488189 0 -1 0 0 0 1 0 0.2992126 0.9527559 -0.2755905 0.3779528 0.8818898 0.2755905 0.3779528 0.8818898 -0.2755905 0.08661418 0.9606299 0.2755905 0.08661418 0.9606299 -0.4251969 -0.1338583 0.8976378 0.4251969 -0.1338583 0.8976378 -0.1574803 -0.2362205 0.9606299 0.1574803 -0.2362205 0.9606299 0 -0.4566929 0.8897638</float_array>
+          <technique_common>
+            <accessor source="#mesh_0__meshIndex0_normal_array_id" count="52" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_0__meshIndex0_uv0_id" name="mesh_0__meshIndex0_uv0">
+          <float_array id="mesh_0__meshIndex0_uv0_array_id" count="104">0.750329 0.89681 0.791971 0.822195 0.791139 0.818469 0.791139 0.818469 0.780662 0.806715 0.780662 0.806715 0.750329 0.821409 0.750329 0.821409 0.719996 0.806715 0.719996 0.806715 0.709519 0.818469 0.709519 0.818469 0.708687 0.822195 0.876193 0.805866 0.750329 0.765194 0.624465 0.805866 0.705541 0.779667 0.795116 0.779667 0.795116 0.779667 0.799409 0.749334 0.799409 0.749334 0.816361 0.744587 0.816361 0.744587 0.82025 0.743417 0.701249 0.749334 0.705541 0.779667 0.828117 0.658715 0.778009 0.727304 0.684297 0.744587 0.672541 0.658715 0.722649 0.727304 0.701249 0.749334 0.778009 0.727304 0.722649 0.727304 0.750329 0.713871 0.750329 0.713871 0.680408 0.743417 0.750329 0.697992 0.684297 0.744587 0.750329 0.697992 0.750329 0.693382 0.146551 0.421718 0.146551 1.0216 0.516505 0.864803 0.517353 0.864803 0.692795 0.576159 0.693643 0.576159 0.74515 0.252474 0.745997 0.252474 0.484149 0.0173855 0.484996 0.0173855 0.146551 -0.125966</float_array>
+          <technique_common>
+            <accessor source="#mesh_0__meshIndex0_uv0_array_id" count="52" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_0__meshIndex0_vertices_id">
+          <input semantic="POSITION" source="#mesh_0__meshIndex0_position_id" />
+        </vertices>
+        <triangles material="SuperStarMat00" count="80">
+          <input semantic="VERTEX" source="#mesh_0__meshIndex0_vertices_id" offset="0" />
+          <input semantic="NORMAL" source="#mesh_0__meshIndex0_normal_id" offset="0" />
+          <input semantic="TEXCOORD" source="#mesh_0__meshIndex0_uv0_id" offset="0" set="0" />
+          <p>0 1 2 0 3 1 0 2 4 0 5 3 0 4 6 0 7 5 0 6 8 0 9 7 0 8 10 0 11 9 0 10 12 0 12 11 1 13 2 1 3 13 3 5 13 2 13 4 7 9 14 7 14 5 8 15 10 8 16 15 11 12 15 11 15 9 12 10 15 13 17 4 13 5 18 13 19 17 13 18 20 13 21 19 13 20 22 13 23 21 13 22 23 18 14 20 18 5 14 16 24 15 9 25 14 9 15 25 19 21 26 19 26 27 23 22 26 23 26 21 22 20 26 24 28 15 24 29 28 24 30 29 14 25 31 14 32 20 14 31 33 14 34 32 14 33 34 33 29 34 33 31 29 32 34 26 32 26 20 25 15 31 27 26 35 30 35 29 28 36 15 28 29 36 34 37 26 34 29 37 31 15 38 31 38 29 38 36 29 38 15 36 35 26 39 35 39 29 37 40 26 37 29 40 40 39 26 40 29 39 41 42 43 41 44 42 41 43 45 41 46 44 41 45 47 41 48 46 41 47 49 41 50 48 41 49 51 41 51 50</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="vs_int_smb_star_id" name="vs_int_smb_star">
+      <node id="vsn_mesh_0__meshIndex0_id" name="vsn_mesh_0__meshIndex0" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_0__meshIndex0_id">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="SuperStarMat00" target="#SuperStarMat00_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#vs_int_smb_star_id" />
+  </scene>
+</COLLADA>

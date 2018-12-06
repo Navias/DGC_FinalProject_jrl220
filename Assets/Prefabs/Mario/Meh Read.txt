@@ -1,0 +1,6 @@
+Some textures may need to be mirrored X/Y
+
+The few that are missing had UV issues that I couldn't fix:
+Coin
+Cannon
+Koopa Shell
